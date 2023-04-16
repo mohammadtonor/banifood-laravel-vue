@@ -1,0 +1,140 @@
+/*!
+ * Vali Admin
+ * Author: Pratik Borsadiya
+ * ================================*/
+
+// 1 - TOOLS
+//---------------------------------------------------
+
+// This files are essential for the theme
+@import '1-tools/fonts';
+@import '1-tools/vars';
+@import '1-tools/customize-bootstrap';
+@import '1-tools/bootstrap-source/bootstrap';
+
+// Vendor plugin files 
+// Can be excluded based on your needs
+@import '1-tools/dataTables.bootstrap';
+@import '1-tools/bootstrap-datepicker';
+@import '1-tools/sweetalert';
+@import '1-tools/notify';
+@import '1-tools/select2';
+@import '1-tools/pace';
+@import '1-tools/jqvmap';
+@import '1-tools/fullcalendar';
+
+// 2 - BASICS
+//---------------------------------------------------
+
+// This styles are essential for theme
+@import '2-basics/app';
+@import '2-basics/helpers';
+
+// 3 - Component
+//---------------------------------------------------
+
+@import '3-component/header';
+@import '3-component/sidebar';
+@import '3-component/sidebar-mini';
+
+// This styles are optional based on your preferance
+@import '3-component/dropdown';
+@import '3-component/button';
+@import '3-component/app-title';
+@import '3-component/tile';
+@import '3-component/custom-radio-n-checkbox';
+@import '3-component/toggle-button';
+@import '3-component/material-half-bg';
+@import '3-component/material-loader';
+@import '3-component/button-spinner';
+@import '3-component/widgets';
+@import '3-component/chat';
+
+// Include the following style if you need RTL support
+// Also you will need to add dir="rtl" attribute to HTML tag
+
+@import '3-component/rtl';
+
+// 4 -Pages
+//---------------------------------------------------
+
+// This styles are optional based on your preferance
+@import '4-pages/login-material';
+@import '4-pages/lockscreen-material';
+@import '4-pages/error-page';
+@import '4-pages/mailbox';
+@import '4-pages/user-profile';
+
+// 5-Fonts
+// Any things
+body {
+  font-family: iransans  !important;
+}
+h1, h2, h3, h4, h5, h6,input, textarea {
+  font-family: iransans !important;
+}
+
+.app-header__logo {
+  font-family: iransans  ;
+}
+
+.login-box {
+  padding: 3em;
+}
+
+#end-button {
+  padding-top: 2em;
+}
+
+#user-menu {
+  direction: ltr !important;
+}
+
+.custom-file-label {
+  padding-right: 6em !important;
+}
+
+.padding-top-1em {
+  padding-top: 1em;
+}
+.error-border {
+  border: 1px solid red;
+}
+.select2-container--default .select2-selection--single {
+  height: 35px !important;
+  padding: 5px !important;
+}
+
+thead a {
+  color: #FFFFFF !important;
+}
+
+.service_search_results {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #eee;
+  top: 64px;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.9em;
+  border: thin solid #e6e6e6;
+  border-bottom: none;
+}
+.service_search_results li {
+  line-height: 23px;
+  border-bottom: thin solid #e6e6e6;
+}
+.service_search_result_item {
+  padding: 0.2em 0;
+}
+.service_search_result_item:hover {
+  background: #333;
+  color: #eee;
+}
+.form-group {
+  position: relative;
+}
